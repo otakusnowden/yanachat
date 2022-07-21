@@ -31,6 +31,17 @@ class Dashboard extends CI_Controller {
 			$crud->set_table('users');
 			$crud->set_subject('Users');
 
+			$crud->callback_before_insert(function($post_array){
+			    $post_array['password'] = sha1($post_array['password']);
+			    return $post_array;
+			});
+
+			$crud->callback_before_update(function($post_array){
+			    $post_array['password'] = sha1($post_array['password']);
+			    return $post_array;
+			});
+
+
 			$output = $crud->render();
 
 			$this->dashboard_output($output);
