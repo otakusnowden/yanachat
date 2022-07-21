@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-include_once('/app/vendor/chriskacerguis/codeigniter-restserver/src/RestController.php');
-include_once('/app/vendor/chriskacerguis/codeigniter-restserver/src/Format.php');
+//include_once('/app/vendor/chriskacerguis/codeigniter-restserver/src/RestController.php');
+//include_once('/app/vendor/chriskacerguis/codeigniter-restserver/src/Format.php');
 
 use chriskacerguis\RestServer\RestController;
 
